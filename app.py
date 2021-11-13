@@ -7,14 +7,14 @@ import sklearn
 from sklearn.preprocessing import StandardScaler
 app = Flask(__name__)
 model = pickle.load(open('LinReg.pickle', 'rb'))
-@app.route('/',methods=['POST'])
+@app.route('/',methods=['GET'])
 def Home():
     return render_template('index.html')
 
 standard_to = StandardScaler()
-@app.route("/predict", methods=['POST'])
+@app.route("/predict", methods=['GET'])
 def predict():
-    if request.method == 'POST':
+    if request.method == 'GET':
         CRIM = float(request.form['CRIM'])
         ZN = float(request.form['ZN'])
         INDUS = float(request.form['INDUS'])
