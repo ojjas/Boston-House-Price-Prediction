@@ -5,6 +5,6 @@
 
 • If you want to view the deployed model, click on the following link:
 
- https://boston-house-price-pred.herokuapp.com/
+ https://boston-price-pred.herokuapp.com/
 
 • Please do ⭐ the repository, if it helped you in anyway.
